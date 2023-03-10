@@ -8,7 +8,8 @@
       const customElementName = 'list-compare';
       const settings = {};
       const element = document.getElementById('myCustomElement');
-
+      
+      customElements.define('list-compare', ListCompare);
       $w.onReady(function () {
         $w(customElementName).render(element, settings);
       });
